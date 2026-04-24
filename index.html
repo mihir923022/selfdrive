@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentRide — Vehicle Rental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand"><span class="brand-r">R</span>entRide</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('vehicles')">Browse</a>
+    <span id="navAuth"></span>
+  </div>
+</nav>
+
+<!-- PAGES -->
+<main id="appRoot"></main>
+
+<!-- MODAL OVERLAY -->
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div id="modalBox" class="modal-box"></div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
